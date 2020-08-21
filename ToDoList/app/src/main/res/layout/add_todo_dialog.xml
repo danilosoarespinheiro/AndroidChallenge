@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/todoDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Todo Item"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/edtTitleTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title_item_todo"
+        android:text="@string/title_item_todo"/>
+
+    <EditText
+        android:id="@+id/editDescriptionTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description_item_todo"
+        android:text="@string/description_item_todo"/>
+
+    <Button
+        android:id="@+id/btnSaveTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_gravity="center" />
+
+</LinearLayout>

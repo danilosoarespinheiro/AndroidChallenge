@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Weather Forecast App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="empty_list">The list is empty</string>
+
+</resources>

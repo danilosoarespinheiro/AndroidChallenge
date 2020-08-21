@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="weather"
+            type="com.danilosp.weatherforecastapp.model.WeatherDetail" />
+    </data>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherLayout"
+        android:longClickable="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weatherTemp"
+                android:hint="Temperatura"
+                android:text='@{String.valueOf(weather.main.temp) + " Kº"}' />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weatherSky"
+                android:hint="Céu"
+                android:text="@{weather.weather.get(0).description}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weatherDate"
+                android:hint="Céu"
+                android:text="@{weather.dt_txt}" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

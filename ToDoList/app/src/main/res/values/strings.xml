@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ToDo List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <string name="empty_list">The list is empty</string>
+
+
+    <!--  Item List-->
+    <string name="title_item_todo">Title</string>
+    <string name="description_item_todo">Description</string>
+    <string name="created_date_item_todo">Created date</string>
+    <string name="done_item_todo">Done</string>
+</resources>
